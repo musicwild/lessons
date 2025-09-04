@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            shadow 
+        </title>
+    </head>
+    <body>
+        <p id="shadow"></p>
+        <script>
+            function findthemax(){
+                var i
+                var max=0
+                for(i=0;i<arguments.length;i++){
+                    if(arguments[i]>max){
+                        max=arguments[i]
+                    }
+                }
+                return max
+            }
+            document.getElementById("shadow").innerHTML=findthemax(3, 6, 9)
+        </script>
+    </body>
+</html>

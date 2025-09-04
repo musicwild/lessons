@@ -1,0 +1,15 @@
+footer{
+    background-color: rgb(183, 175, 168);
+    color: rgb(50, 47, 47);
+}
+#part{
+    background-image: url("../picture/bomb.png");
+    background-color: #1cc736b9;
+}
+header{
+    background: linear-gradient(rgb(190, 253, 213),rgb(82, 163, 120));
+    ;
+}
+#turtleinfo{
+    background:radial-gradient(circle, rgb(40, 134, 97),rgb(180, 255, 180));
+}
