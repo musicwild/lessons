@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Real Time Validation</title>
+
+</head>
+
+<body>
+
+    <h1>REAL TIME VALIDATION USING JS</h1>
+
+
+    <form>
+
+        <table border="1" cellpadding="10">
+
+            <tr>
+
+                <td>Email:</td>
+
+                <td><input type="text" id="email" placeholder="myname@gmail.com"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>Password:</td>
+
+                <td><input type="password" id="password" placeholder="•••••••"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>Age:</td>
+
+                <td><input type="text" id="age" placeholder="22"></td>
+
+            </tr>
+
+            <tr>
+
+                <td colspan="3" align="center">
+
+                    <button type="button" onclick="validateForm()">Login</button>
+
+                </td>
+
+            </tr>
+
+        </table>
+
+    </form>
+
+
+    <div id="message"></div>
+
+    <script>
+
+        function validateForm() {
+
+            var email = document.getElementById('email').value;
+
+            var pass = document.getElementById('password').value;
+
+            var age = document.getElementById('age').value;
+
+            var msgBox = document.getElementById('message');
+
+
+            var message = '';
+
+
+            if (email === 'rubab@gmail.com') {
+
+                message = 'Enter a correct email.';
+
+                msgBox.style.color = 'red';
+
+            } else if (pass === '') {
+
+                message = 'Enter a password.';
+
+                msgBox.style.color = 'red';
+
+            } else if (age === '') {
+
+                message = 'Enter your age.';
+
+                msgBox.style.color = 'red';
+
+            } else {
+
+                message = 'login successful!';
+
+                msgBox.style.color = 'green';
+
+            }
+
+
+            msgBox.innerText = message;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
