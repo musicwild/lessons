@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>birb</title>
+    </head>
+    <body>
+        <h2>date function</h2>
+        <button onclick="myfuction()">
+            click me!
+        </button>
+        <p id="time"></p>
+        <p id="greet"></p>
+        <script>
+            function myfuction(){
+                var greet
+                var time=new Date().getHours()
+                if(time<10){
+                    greet="good morning"
+                }
+                else if (time<20){
+                    greet="good day"
+                }
+                else{
+                    greet="good evening"
+                }
+                document.getElementById("time").innerHTML="current time is "+time
+                document.getElementById("greet").innerHTML=greet 
+
+            }
+        </script>
+    </body>
+</html>
