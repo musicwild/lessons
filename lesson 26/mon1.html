@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>key</title>
+    </head>
+    <body>
+        <h2>inheratance</h2>
+        <p id="parent"></p>
+        <p id="child">
+        </p>
+        <p id="static"></p>
+        <script>
+            class student{
+                constructor(name){
+                    this.studentname=name
+                }
+                static hello(){
+                    return "hello "
+                }
+                static welcome(x){
+                    return "welcome "+x.studentname
+                }
+                hi(){
+                    return "hi "+this.studentname
+                }
+
+                
+            }
+            myname=new student("ayesha")
+            document.getElementById("parent").innerHTML=student.hello()
+            document.getElementById("child").innerHTML=myname.hi( )
+            document.getElementById("static").innerHTML=student.welcome(myname)
+        </script>
+    </body>
+</html>

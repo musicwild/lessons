@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            nke
+        </title>
+    </head>
+    <body>
+        <h2>javascript class and elements</h2>
+        <p id="nke"></p>
+        <script>
+            class Car{
+                constructor(brand){
+                    this.carname=brand
+                }
+                my_car(){
+                    return "i have a "+this.carname
+                }
+            }
+            class Model extends Car{
+                constructor(brand,car_model){
+                    super(brand)
+                    this.model=car_model
+                }
+                show(){
+                    return this.my_car()+ " of model "+this.model
+                }
+            } 
+            var mycar=new Model("audi","q7")
+            document.getElementById("nke").innerHTML=mycar.show(
+            )
+        </script>
+    </body>
+</html>
