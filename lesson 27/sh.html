@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        sh
+    </head>
+    <body>
+        <h2>javascript array sore</h2>
+        <button onclick="ascending()">ascending order</button>
+        <button onclick="descending()">descending order</button>
+        <p id="sh"></p>
+        <script>
+            var points=[1,12,5,43,13]
+            document.getElementById("sh").innerHTML=points
+            function ascending(){
+                points.sort(function(a,b){
+                    return a-b
+                })
+                document.getElementById("sh").innerHTML=points
+                
+            }
+            function descending(){
+                points.sort(function(a,b){
+                    return b-a
+                })
+                document.getElementById("sh").innerHTML=points
+            }
+        </script>
+    </body>
+</html>

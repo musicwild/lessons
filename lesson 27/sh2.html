@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sho</title>
+    </head>
+    <body>
+        <h3>using eval function</h3>
+        <button onclick="myfunction()">click me</button>
+        <p id="sh"></p>
+        <script>
+            function myfunction(){
+                var x=10
+                var y=20
+                var add=eval("x+y")+"<br>"
+                var sub=eval("x-y")+"<br>"
+                var multiply=eval("x*y")+"<br>"
+                var divide=eval("x/y")+"<br>"
+                var result=add+sub+multiply+divide
+                document.getElementById("sh").innerHTML=result
+            }
+        </script>
+    </body>
+</html>
