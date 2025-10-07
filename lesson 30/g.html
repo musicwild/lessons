@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>geo</title>
+    </head>
+    <body>
+        <p>
+            enter a number and click ok
+         </p>
+            <input id="id1" type="number" min="100" max="300" required>
+            <button onclick="myfunction()">OK</button>
+            <p>If the number is less then 100 but greator then 300 an error message will appear.</p>
+            <p id="result"></p>
+            <script>
+                function myfunction(){
+                    var input=document.getElementById("id1")
+                    if(!input.checkValidity()){
+                        document.getElementById("result").innerHTML=input.validitionMessage
+                    }
+                    else{
+                        document.getElementById("result").innerHTML="correct input "
+                    }
+                }
+            </script>
+    </body>
+
+</html>
